@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <h3>Person</h3>
+    <hr />
+    <form [formGroup]="personForm" (ngSubmit)="save()" #formDir="ngForm" novalidate>
+        <div class="form-group row">
+            <label class=" control-label col-md-12" for="Name">Name</label>
+            <div class="col-md-4">
+                <input class="form-control" type="text" formControlName="name">
+            </div>
+            <span class="text-danger" *ngIf="personForm.hasError('required', 'name') && formDir.submitted">
+                Name is required.
+            </span>
+        </div>
+
+        <div class="form-group row">
+            <label class="control-label col-md-12" for="Latitude">Latitude</label>
+            <div class="col-md-4">
+                <input class="form-control" type="number" formControlName="latitude">
+            </div>
+            <span class="text-danger" *ngIf="personForm.hasError('required', 'latitude') && formDir.submitted">
+                Latitude is required. Enter a number.
+            </span>
+        </div>
+        <div class="form-group row">
+            <label class="control-label col-md-12" for="Longitude">Longitude</label>
+            <div class="col-md-4">
+                <input class="form-control" type="number" formControlName="longitude" data-val="true">
+            </div>
+            <span class="text-danger" *ngIf="personForm.hasError('required', 'longitude') && formDir.submitted">
+                Longitude is required. Enter a number.
+            </span>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-default">Save</button>
+            <button class="btn" (click)="cancel()">Cancel</button>
+        </div>
+    </form>
+</body>
+</html>
