@@ -6,6 +6,7 @@
 2. Go into any folder and then clone the directory using the following commands:
 
   cd /c/Users/<your user name>/source
+  
   git clone https://github.com/duniansampa/TheClosestFriends.git
   
 3. Navigate to the root directory of the app in your command shell
