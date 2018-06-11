@@ -4,11 +4,8 @@
 
 1. Open the Git Bash
 2. Go into any folder and then clone the directory using the following commands:
-
-  cd /c/Users/<your user name>/source
-  
-  git clone https://github.com/duniansampa/TheClosestFriends.git
-  
+  - cd /c/Users/<your user name>/source
+  - git clone https://github.com/duniansampa/TheClosestFriends.git
 3. Navigate to the root directory of the app in your command shell
 4. Run npm install
 5. Open the Visual Studio 17
