@@ -14,4 +14,4 @@
 8. If all goes well, the graphical interfaces of the App will be 
    equivalent to the images that are in the appImages directory.
    
-Obs: The url is http://localhost:<web app port>/
+Obs: The url is http://localhost:XXXXX/
